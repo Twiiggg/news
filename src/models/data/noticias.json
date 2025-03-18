@@ -1,0 +1,24 @@
+{
+    "noticias":[
+        {
+            "titulo": "primeira noticia", 
+            "noticia": "Mussum Ipsum, cacilds vidis litro abertis.  Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Diuretics paradis num copo é motivis de denguis."
+        },
+        {
+            "titulo": "scond noticia", 
+            "noticia": "Mussum Ipsum, cacilds vidis litro abertis.  Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Diuretics paradis num copo é motivis de denguis."
+        },
+        {
+            "titulo": "tres noticia", 
+            "noticia": "Mussum Ipsum, cacilds vidis litro abertis.  Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Diuretics paradis num copo é motivis de denguis."
+        },
+        {
+            "titulo": "four noticia", 
+            "noticia": "Mussum Ipsum, cacilds vidis litro abertis.  Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Diuretics paradis num copo é motivis de denguis."
+        },
+        {
+            "titulo": "5 news",
+            "noticia": "Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Sapien in monti palavris qui num significa nadis i pareci latim. Pra lá, depois divoltis porris, paradis. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl."
+        }
+    ]
+}

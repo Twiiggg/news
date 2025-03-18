@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/style.css">
+    <title>Notícias</title>
+</head>
+<script>
+    let ejs = require('ejs');
+</script>
+<body>  
+<nav>
+    <p class="header-title">Noticiario de Noticias</p>
+</nav> 
+<% newNews.forEach(function(news){ %>
+    <!-- newNews is not defined -->
+    <div class="grid-container">
+        <div class="noticia">
+            <h1> <%= news.title %> </h1>
+            <p>
+                <%= news.content %> 
+            </p>
+        </div>
+        <% }); %>
+    </div>
+</body>
+</html>
