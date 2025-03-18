@@ -8,8 +8,8 @@ app.use(express.static('public'));
 app.use(express(json));
 
 app.get('/noticias', (req,res) => {
-    res.render(__dirname + '/src/views/news/index.ejs', { newNews: newNews });
-    // ReferenceError: newNews is not defined
+    res.render(__dirname + '/src/views/news/index.ejs', { newTitle: req.newTitle });
+    // ReferenceError: newTitle is not defined
     // at C:\Users\olavo_23909\Downloads\news\server.js:11:17
     // at Layer.handle [as handle_request] (C:\Users\olavo_23909\Downloads\news\node_modules\express\lib\router\layer.js:95:5)
     // at next (C:\Users\olavo_23909\Downloads\news\node_modules\express\lib\router\route.js:149:13)
