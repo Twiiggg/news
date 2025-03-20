@@ -5,7 +5,7 @@ const data = json.json();
 
 console.log(data);
 
-const news = sequelize.define('News', {
+const news = sequelize.define('news', {
     title: {
         type: DataTypes.STRING,
         allowNull:false
@@ -19,7 +19,7 @@ const news = sequelize.define('News', {
 (async () => {
     await sequelize.sync();
 
-    const newTitle = news.create({
+    const newNews = news.create({
         title: data.titulo,
         content: data.noticia
     })
@@ -36,7 +36,7 @@ const news = sequelize.define('News', {
 // const sequelize = new Sequelize('sqlite::memory:');
 
 // // Define the News model
-// const newTitle = sequelize.define('News', {
+// const newNews = sequelize.define('News', {
 //     title: {
 //         type: DataTypes.STRING,
 //         allowNull: false
@@ -73,10 +73,10 @@ const news = sequelize.define('News', {
 //         await loadData();
 
 //         // Fetch the news data from the database
-//         const newTitle = await News.findAll();
+//         const newNews = await News.findAll();
         
 //         // Pass the data to the EJS template
-//         res.render('news/index', { newTitle: newTitle });
+//         res.render('news/index', { newNews: newNews });
 //     } catch (error) {
 //         console.error('Error loading data:', error);
 //         res.status(500).send('Server error occurred');
