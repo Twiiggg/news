@@ -13,13 +13,14 @@
 <nav>
     <p class="header-title">Noticiario de Noticias</p>
 </nav> 
-<% newNews.forEach(newNews => { %>
-    <!-- newNews is not defined -->
-    <div class="grid-container">
+<div class="grid-container">
+        <% LoadNews.forEach(noticia => { %>
+            <!-- loadNews is not defined -->
+            <!-- NADA É DEFINIDO NESSA PORRA -->
         <div class="noticia">
-            <h1> <%= news.title %> </h1>
+            <h1> <%= noticia.titulo %> </h1>
             <p>
-                <%= news.content %> 
+                <%= noticia.conteudo %> 
             </p>
         </div>
         <% }); %>
