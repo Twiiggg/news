@@ -1,29 +1,37 @@
-const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = new Sequelize('sqlite: :memory:');
-const json = await fetch('/data/noticias.json');
-const data = json.json();
+// const sequelize = new Sequelize('sqlite: :memory:');
+// const { Sequelize, DataTypes } = require('sequelize');
+const fs = require('fs');
+const json = path.join(__dirname, '/data/noticias.json');
 
-console.log(data);
-
-const news = sequelize.define('news', {
-    title: {
-        type: DataTypes.STRING,
-        allowNull:false
-    },
-    content: {
-        type: DataTypes.STRING,
-        allowNull:false
-    }
-});
-
-(async () => {
-    await sequelize.sync();
-
-    const newNews = news.create({
-        title: data.titulo,
-        content: data.noticia
+function loadNews(callback) {
+    fs.readFile(json, "utf-8", (err, data) => {
+        if (err) {return callback(err, null)}
+        const noticias = JSON.parse(data)
+        if (noticias.noticias) {callback(null, noticias)}
+        else {callback(new Error("dados não existem"))}
     })
-});
+}
+module.exports = {loadNews}
+
+// const news = sequelize.define('news', {
+//     title: {
+//         type: DataTypes.STRING,
+//         allowNull:false
+//     },
+//     content: {
+//         type: DataTypes.STRING,
+//         allowNull:false
+//     }
+// });
+
+// (async () => {
+//     await sequelize.sync();
+
+//     const newNews = news.create({
+//         title: data.titulo,
+//         content: data.noticia
+//     })
+// });
 
 // ---------------------------------------------------------------------------------------------------------------------------------
 
