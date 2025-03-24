@@ -7,6 +7,6 @@ module.exports = function(application){
     application.get('/', function(req,res) {
         // quando a rota root '/' é acessada chama o metodo index do controller 'news'
         // aí ele passa application, 'req' (request) e 'res' (response) para o metodo 'index'
-        application.src.controllers.news.index(application, req, res)
+        application.src.controllers.controllerNews.index(application, req, res)
     })
 }           
