@@ -1,7 +1,7 @@
 // importa o express
 const express = require('express');
 const app = express();
-// define a pasta src como 'raiz' para outros paths
+//Entrega a pasta src como arquivo estático para o css funcionar
 app.use(express.static(__dirname + '/src'));
 // define o motor da view, para que ele seja renderizado
 app.set('view engine', 'ejs');
