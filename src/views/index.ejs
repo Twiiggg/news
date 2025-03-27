@@ -1,0 +1,26 @@
+<!-- html padrão -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias</title>
+    <link rel="stylesheet" type="text/css" href="../public/style.css">
+</head>
+<body>  
+    <nav>
+        <p class="header-title">Noticiario de Noticias</p>
+    </nav> 
+    <div class="grid-container">
+        <!-- fará com que para cada noticia, haverá uma uma div, h1, e p para ela -->
+        <% news.forEach(function (noticias) { %>
+        <div class="noticia">
+            <h1> <%= noticias.titulo %> </h1>
+            <p>
+                <%= noticias.conteudo %>
+            </p>
+        </div>
+        <% }); %>
+    </div>
+</body>
+</html>

@@ -1,4 +1,3 @@
-
 # Refatoração de um código
 
 Refatorar um código consiste em reestruturar um código de um software, sem que sofra alteração no comportamento externo, com o objetivo de melhorá-lo, tornando-o mais legível, eficiente e atualizado.
@@ -11,5 +10,3 @@ Ela permite que:
 - Torne o código legível - muita das vezes quando um desenvolvedor não utiliza das práticas do código limpo (comentar, nomear as variáveis corretamente, aplicar métodos adequadamente), ao outro desenvolvedor ler aquele código, ele não consegue entender como aquele código foi estruturado. A refatoração permite que essa "sujeira" do código seja removida e torne o código legível e fácil de entender;
 - Ache bugs mais facilmente - quando um código está legível, os bugs presentes nele ficarão muito mais evidentes e, consequentemente, ficará mais fácil de resolvê-los
 - Com todos esses benefícios, a programação se torna rápida e mais simples na hora do desenvolvimento do software.
-
-![Alt text](image.png)
